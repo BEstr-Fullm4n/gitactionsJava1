@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/")
     public String hello() {
-        return "Hello World Global CICD Template";
+        return "Hello World Global CICD Template Test v1";
     }
 }
