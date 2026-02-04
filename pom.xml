@@ -48,39 +48,39 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins>
 
-		<!-- SpotBugs -->
-		<plugin>
-			<groupId>com.github.spotbugs</groupId>
-			<artifactId>spotbugs-maven-plugin</artifactId>
-			<version>4.9.3.0</version>
-			<dependencies>
-			<dependency>
+			<!-- SpotBugs -->
+			<plugin>
 				<groupId>com.github.spotbugs</groupId>
-				<artifactId>spotbugs</artifactId>
-				<version>4.9.3</version>
-			</dependency>
-			</dependencies>
-		</plugin>
+				<artifactId>spotbugs-maven-plugin</artifactId>
+				<version>4.9.3.0</version>
+				<dependencies>
+				<dependency>
+					<groupId>com.github.spotbugs</groupId>
+					<artifactId>spotbugs</artifactId>
+					<version>4.9.3</version>
+				</dependency>
+				</dependencies>
+			</plugin>
 
-		<!-- PMD -->
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-pmd-plugin</artifactId>
-			<version>3.21.2</version>
-		</plugin>
+			<!-- PMD -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.21.2</version>
+			</plugin>
 
-		<!-- Checkstyle -->
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-checkstyle-plugin</artifactId>
-			<version>3.4.0</version>
-			<!--<configuration>
-			<failOnViolation>false</failOnViolation>  No falla build 
-			</configuration>-->
-		</plugin>
+			<!-- Checkstyle -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>3.4.0</version>
+				<!--<configuration>
+				<failOnViolation>false</failOnViolation>  No falla build 
+				</configuration>-->
+			</plugin>
 
+		</plugins>
 	</build>
 
 </project>
